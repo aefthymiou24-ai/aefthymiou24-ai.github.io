@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantum Codex Support</title>
+<meta name="description" content="Help, contact and privacy for Quantum Codex, a cosy pixel collecting game for iPhone and iPad.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<div class="hero"><img src="assets/attic.jpg" alt="Grandpa's attic at night: a vending machine under a sheet marked Quantum Corp, two habitats glowing under their sheets, lightning in the window, and the Quantum Codex logo." width="1920" height="823"></div>
+
+<main class="wrap">
+  <header class="top">
+    <img src="assets/icon-256.png" alt="">
+    <div>
+      <h1>Quantum Codex Support</h1>
+      <p class="tag">Help with the cosy pixel collecting game for iPhone and iPad.</p>
+    </div>
+  </header>
+
+  <section class="panel" aria-labelledby="contact-h">
+    <span class="label" id="contact-h">Contact</span>
+    <p>Found a bug, lost something, or have an idea? Email and you'll get a reply, usually within a couple of days.</p>
+    <div class="mail">
+      <a id="email" href="mailto:aefthymiou24@icloud.com?subject=Quantum%20Codex">aefthymiou24@icloud.com</a>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+    <ul>
+      <li>Your device (for example iPhone 16 Pro Max) and iOS version</li>
+      <li>What you were doing when it happened</li>
+      <li>A screenshot or screen recording if you can</li>
+    </ul>
+  </section>
+
+  <h2>Questions</h2>
+  <details>
+    <summary>How do I start?</summary>
+    <div><p>Plug in the machine in the attic, open a pack from the shop and swipe across it to tear it open. Keep the pals you want and release the rest.</p></div>
+  </details>
+  <details>
+    <summary>How do I feed my pals?</summary>
+    <div><p>Hold your finger on an empty part of the habitat to drop food essence. Pals that eat grow from <strong>Nascent</strong> to <strong>Developed</strong>, and grown pals earn far more. Upgrade your food to feed the bigger, hungrier pals from later packs.</p></div>
+  </details>
+  <details>
+    <summary>What are Quantum Coins?</summary>
+    <div><p>The game's money. Your pals earn Quantum Coins over time, even while the game is closed. Spend them on new packs, pack levels and upgrades.</p></div>
+  </details>
+  <details>
+    <summary>How do I unlock the Cosmic habitat?</summary>
+    <div><p>Keep collecting. Once you've found enough pals, HABITATS appears and the Cosmic habitat can be unlocked there, with its asteroids, comets, planets and stars.</p></div>
+  </details>
+  <details>
+    <summary>What are the rarities?</summary>
+    <div><p>Common, Rare, Epic, Legendary and Anomaly. Some pals also come in special colours, and now and then a pack catches fire and leaves a Smouldering pal behind.</p></div>
+  </details>
+  <details>
+    <summary>Are there ads?</summary>
+    <div>
+      <p>Yes. Most are ads you choose to watch for a reward: free Quantum Coins, the last bit of a pack you've nearly saved for, double the coins for a pal you sell, or double what your pals earned while you were away.</p>
+      <p>Now and then a full-screen ad shows after you open packs, never in your first minutes of play. <strong>Remove Ads</strong> in the Premium Shop stops the full-screen ads; you can still choose to watch the reward ads whenever you like.</p>
+    </div>
+  </details>
+  <details>
+    <summary>What's in the Premium Shop?</summary>
+    <div>
+      <p>Open it from SHOP &gt; PREMIUM. Each item is a one-time purchase that lasts forever:</p>
+      <ul>
+        <li><strong>Double Offline Earnings</strong>: twice the Quantum Coins while you're away</li>
+        <li><strong>Double Anomaly &amp; Void Odds</strong>: the rarest pals are twice as likely in every pack</li>
+        <li><strong>Double Pal Growth</strong>: pals grow twice as fast</li>
+        <li><strong>Remove Ads</strong>: no more full-screen ads</li>
+        <li><strong>Deluxe Bundle</strong>: all four for less, plus a bonus Appreciation Electron once electrons are unlocked</li>
+      </ul>
+      <p>Payments are handled by Apple. All purchases directly support the developer.</p>
+    </div>
+  </details>
+  <details>
+    <summary>I bought something and it's missing</summary>
+    <div><p>Open SETTINGS (on the home screen, or from the pause menu) and tap <strong>RESTORE PURCHASES</strong>. Use the same Apple ID you bought with. Your purchases come back on a new phone or after reinstalling too. For a refund, use Apple's <a href="https://reportaproblem.apple.com">Report a Problem</a> page.</p></div>
+  </details>
+  <details>
+    <summary>Why does the game use the internet?</summary>
+    <div><p>To check the time now and then, so time-based progress stays fair, and to load ads. If it can't check the time for a day, your pals pause their earning until it can, and then you get that time back. Please don't change your device's clock: Quantum Corp takes time travel very seriously.</p></div>
+  </details>
+  <details>
+    <summary>Where is my progress saved?</summary>
+    <div><p>On your device. Deleting the app deletes your progress, so keep it installed if you want to carry on where you left off. Purchases are kept by Apple and can always be restored.</p></div>
+  </details>
+  <details>
+    <summary>Something's wrong. What should I try first?</summary>
+    <div><p>Close the app fully (swipe it away from the app switcher) and open it again, and check you have the latest version from the App Store. If that doesn't help, email the address above.</p></div>
+  </details>
+
+  <footer>
+    <nav><a href="privacy/">Privacy Policy</a><a href="./">Support</a></nav>
+    <span>&copy; 2026 Alex Efthymiou. Quantum Corp is part of the game's story.</span>
+  </footer>
+</main>
+
+<script>
+(() => {
+  const btn = document.getElementById('copy');
+  const addr = document.getElementById('email');
+  btn.addEventListener('click', () => {
+    const text = addr.textContent.trim();
+    const done = () => { btn.textContent = 'Copied'; btn.dataset.done = ''; setTimeout(() => { btn.textContent = 'Copy address'; delete btn.dataset.done; }, 1800); };
+    const select = () => { const r = document.createRange(); r.selectNodeContents(addr); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected: press Copy'; };
+    try { navigator.clipboard.writeText(text).then(done, select); } catch (e) { select(); }
+  });
+})();
+</script>
+</body>
+</html>
